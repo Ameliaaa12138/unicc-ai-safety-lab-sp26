@@ -148,11 +148,11 @@ python3 main.py
 
 ### The data/ folder contains sample submission cases for testing.
 
-sample_submission.json
+- sample_submission.json
 Baseline case
-sample_submission_low.json
+- sample_submission_low.json
 Lower risk case
-sample_submission_critical.json
+- sample_submission_critical.json
 Higher risk or critical case
 
 These are submission cases, not expert judges. Each submission case is evaluated by all three judges.
@@ -161,15 +161,15 @@ These are submission cases, not expert judges. Each submission case is evaluated
 
 ### After running the pipeline, the system generates:
 
-outputs/judge1_output.json
-outputs/judge2_output.json
-outputs/judge3_output.json
-outputs/synthesis_output.json
-outputs/full_result.json
+- outputs/judge1_output.json
+- outputs/judge2_output.json
+- outputs/judge3_output.json
+- outputs/synthesis_output.json
+- outputs/full_result.json
 
 And a log file:
 
-logs/pipeline_log.json
+- logs/pipeline_log.json
 
 ## Integration Rules
 
@@ -177,15 +177,15 @@ The platform is intentionally structured so that future expert module integratio
 
 Future module integration should happen in:
 
-app/judge1.py
-app/judge2.py
-app/judge3.py
+- app/judge1.py
+- app/judge2.py
+- app/judge3.py
 
 The following files should remain stable unless necessary:
 
-app/main.py
-app/orchestrator.py
-app/synthesis.py
+- app/main.py
+- app/orchestrator.py
+- app/synthesis.py
 
 All future expert modules should preserve the common input and output schemas documented in the schemas/ folder.
 
@@ -193,15 +193,15 @@ All future expert modules should preserve the common input and output schemas do
 
 For the next development stage:
 
-Project 1 has prepared the platform skeleton, documentation, schemas, and initial local SLM environment
-Judge 1 already demonstrates real local SLM integration
-Judge 2 and Judge 3 are still available as integration entry points for future expert modules
-Future work should continue by replacing mock judge logic with actual model backed or prior capstone based expert modules
+- Project 1 has prepared the platform skeleton, documentation, schemas, and initial local SLM environment
+- Judge 1 already demonstrates real local SLM integration
+- Judge 2 and Judge 3 are still available as integration entry points for future expert modules
+- Future work should continue by replacing mock judge logic with actual model backed or prior capstone based expert modules
 ## Notes
 
 This repository is currently a development stage prototype. It is intended to support:
 
-architecture definition
-local SLM experimentation
-expert module integration
-future portability to the NYU DGX Spark / sandbox environment
+- architecture definition
+- local SLM experimentation
+- expert module integration
+- future portability to the NYU DGX Spark / sandbox environment
