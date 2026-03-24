@@ -97,7 +97,7 @@ unicc-ai-safety-lab-sp26/
 ## Requirements
 
 Install Python dependencies:
-
+```text
 pip install -r requirements.txt
 Local SLM Setup
 1. Install Ollama
