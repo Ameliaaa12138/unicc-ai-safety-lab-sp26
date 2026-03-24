@@ -133,7 +133,7 @@ Open a terminal and go to the app folder:
 cd app
 ```
 
-###Step 2
+### Step 2
 
 Run the pipeline:
 ```text
@@ -157,9 +157,9 @@ Higher risk or critical case
 
 These are submission cases, not expert judges. Each submission case is evaluated by all three judges.
 
-Output Files
+## Output Files
 
-After running the pipeline, the system generates:
+### After running the pipeline, the system generates:
 
 outputs/judge1_output.json
 outputs/judge2_output.json
@@ -170,7 +170,8 @@ outputs/full_result.json
 And a log file:
 
 logs/pipeline_log.json
-Integration Rules
+
+## Integration Rules
 
 The platform is intentionally structured so that future expert module integration happens at the judge layer.
 
@@ -188,7 +189,7 @@ app/synthesis.py
 
 All future expert modules should preserve the common input and output schemas documented in the schemas/ folder.
 
-Current Handoff Guidance
+## Current Handoff Guidance
 
 For the next development stage:
 
@@ -196,7 +197,7 @@ Project 1 has prepared the platform skeleton, documentation, schemas, and initia
 Judge 1 already demonstrates real local SLM integration
 Judge 2 and Judge 3 are still available as integration entry points for future expert modules
 Future work should continue by replacing mock judge logic with actual model backed or prior capstone based expert modules
-Notes
+## Notes
 
 This repository is currently a development stage prototype. It is intended to support:
 
