@@ -66,9 +66,9 @@ NYU AI Sandbox demo environment
 A multi judge AI safety evaluation system that uses multiple expert judges and a synthesis step to assess the safety risk of an AI agent.
 
 ## Notes
--This is a simulated sandbox environment
--If judge modules fail, the system uses conservative fallback logic
--The system escalates to human review when uncertain
+- This is a simulated sandbox environment
+- If judge modules fail, the system uses conservative fallback logic
+- The system escalates to human review when uncertain
 ## Demo Summary
 
 Input → API → Multi Judge Evaluation → Critique → Final Decision
